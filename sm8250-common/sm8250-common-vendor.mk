@@ -574,17 +574,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.1-service.wahoo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb@1.1-service.wahoo.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/engmode_manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/engmode_manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/hyper-default-sec.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -1636,4 +1625,16 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
-    manifest_android.hardware.drm@1.3-service.widevine
+    manifest_android.hardware.drm@1.3-service.widevine \
+    engmode_manifest \
+    vendor.samsung.hardware.tlc.atn@1.0-manifest \
+    vendor.samsung.hardware.tlc.hdm@1.1-manifest \
+    vendor.samsung.hardware.tlc.iccc@1.0-manifest \
+    vendor.samsung.hardware.tlc.tima@1.0-manifest \
+    hyper-default-sec \
+    vendor.samsung.hardware.hqm@1.0-manifest \
+    vendor.samsung.hardware.authfw@1.0-manifest \
+    vendor.qti.hardware.servicetracker@1.2-service \
+    android.hardware.usb@1.1-service.wahoo \
+    android.hardware.dumpstate@1.1-service-lazy
+    
