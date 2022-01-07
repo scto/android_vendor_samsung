@@ -1725,7 +1725,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.iccc@1.0-manifest \
     vendor.samsung.hardware.tlc.tima@1.0-manifest \
     hyper-default-sec \
-    lights-default-sec \
     power-samsung \
     vendor.samsung.hardware.hqm@1.0-manifest \
     vendor.samsung.hardware.authfw@1.0-manifest \

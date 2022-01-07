@@ -293,15 +293,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "lights-default-sec",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/lights-default-sec.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.samsung.hardware.hqm@1.0-manifest",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml",
