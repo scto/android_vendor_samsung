@@ -254,6 +254,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/embmslibrary.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/embmslibrary.jar \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/uimservicelibrary.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/uimservicelibrary.jar \
+    vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
+    vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/qti-telephony-hidl-wrapper.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-hidl-wrapper.jar \
+    vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/qti-telephony-utils.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-utils.jar \
+    vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/uimservicelibrary.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/uimservicelibrary.jar \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.data.factory-V1.0-java.jar \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/vendor.qti.data.factory-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.data.factory-V2.0-java.jar \
     vendor/samsung/sm8250-common/proprietary/system/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.data.factory-V2.1-java.jar \
