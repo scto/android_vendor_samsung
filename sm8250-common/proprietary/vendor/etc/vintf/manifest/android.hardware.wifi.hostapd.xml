@@ -1,10 +1,10 @@
 <manifest version="1.0" type="device">
     <hal format="hidl">
-        <name>vendor.samsung.hardware.hqm</name>
+        <name>android.hardware.wifi.hostapd</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
-            <name>ISehHqm</name>
+            <name>IHostapd</name>
             <instance>default</instance>
         </interface>
     </hal>
