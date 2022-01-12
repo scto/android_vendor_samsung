@@ -93,10 +93,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libsdm-disp-apis.qti.so"],
+			srcs: ["proprietary/system/system_ext/lib/libsdm-disp-apis.qti.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libsdm-disp-apis.qti.so"],
+			srcs: ["proprietary/system/system_ext/lib64/libsdm-disp-apis.qti.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -241,7 +241,7 @@ dex_import {
 dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "samsung",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	jars: ["proprietary/system/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
 	system_ext_specific: true,
 }
 
