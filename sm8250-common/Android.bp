@@ -86,73 +86,9 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "MdecService",
-	owner: "samsung",
-	apk: "proprietary/system/app/MdecService/MdecService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "SimMobilityKit",
-	owner: "samsung",
-	apk: "proprietary/system/app/SimMobilityKit/SimMobilityKit.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "BiometricSetting",
 	owner: "samsung",
 	apk: "proprietary/system/priv-app/BiometricSetting/BiometricSetting.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "EpdgService",
-	owner: "samsung",
-	apk: "proprietary/system/priv-app/EpdgService/EpdgService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "ImsLogger",
-	owner: "samsung",
-	apk: "proprietary/system/priv-app/ImsLogger/ImsLogger.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "SecTelephonyProvider",
-	owner: "samsung",
-	apk: "proprietary/system/priv-app/SecTelephonyProvider/SecTelephonyProvider.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "imsservice",
-	owner: "samsung",
-	apk: "proprietary/system/priv-app/imsservice/imsservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -207,21 +143,162 @@ android_app_import {
 }
 
 dex_import {
-	name: "framework-samsung",
+	name: "tcmclient",
 	owner: "samsung",
-	jars: ["proprietary/system/framework/framework-samsung.jar"],
-}
-
-dex_import {
-	name: "imsmanager",
-	owner: "samsung",
-	jars: ["proprietary/system/framework/imsmanager.jar"],
+	jars: ["proprietary/system/framework/tcmclient.jar"],
 }
 
 dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "samsung",
 	jars: ["proprietary/system/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.api-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.quicinc.cne.api-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.api-V1.1-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.quicinc.cne.api-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V2.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.quicinc.cne.constants-V2.1-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.api-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.constants-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.qmi-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.slmadapter-V1.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "samsung",
+	jars: ["proprietary/system/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -274,15 +351,6 @@ prebuilt_etc_xml {
 	name: "hyper-default-sec",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
