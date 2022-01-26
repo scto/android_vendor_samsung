@@ -6,9 +6,15 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/r8q
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/r8q/proprietary/system/lib/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.keymaster@3.0.so \
+    vendor/samsung/r8q/proprietary/system/lib/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.keymaster@4.0.so \
+    vendor/samsung/r8q/proprietary/system/lib/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.keymaster@4.1.so \
+    vendor/samsung/r8q/proprietary/system/lib64/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.keymaster@3.0.so \
+    vendor/samsung/r8q/proprietary/system/lib64/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.keymaster@4.0.so \
+    vendor/samsung/r8q/proprietary/system/lib64/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.keymaster@4.1.so \
+    vendor/samsung/r8q/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service \
     vendor/samsung/r8q/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti \
     vendor/samsung/r8q/proprietary/vendor/bin/hw/vendor.samsung.hardware.light-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.light-service \
-    vendor/samsung/r8q/proprietary/vendor/bin/keymasterd:$(TARGET_COPY_OUT_VENDOR)/bin/keymasterd \
     vendor/samsung/r8q/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Codec_cal.acdb \
@@ -19,8 +25,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
+    vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
-    vendor/samsung/r8q/proprietary/vendor/etc/init/keymasterd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymasterd.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/init/lights-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-default-sec.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/permissions/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml \
     vendor/samsung/r8q/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
@@ -217,12 +223,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/hw/vendor.samsung.hardware.snap@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.snap@1.2-impl.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4_1support.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster4support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4support.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_helper.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
-    vendor/samsung/r8q/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.flicker.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
